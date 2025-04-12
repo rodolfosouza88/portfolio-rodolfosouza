@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="icon" href="/img/icon-portfolio.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Portfólio - Rodolfo Souza</title>
+</head>
+
+<body>
+  <!--Header-->
+  <section id="header">
+    <a class="header-title" href="">
+      <h1>rodolfosouza.dev</h1>
+    </a>
+
+    <nav class="navbar">
+      <button class="menu-hamburguer"></button>
+
+      <ul class="navbar-links">
+        <li><a href="#person">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
+
+  </section>
+  <!--Fim do Header-->
+
+  <!--Person-->
+  <section id="person">
+    <div class="person-content">
+      <div class="person-name">
+        <h1>Olá, <span></span> </h1>
+        <h1>Meu nome é <span></span> </h1>
+        <h1>Rodolfo Souza <span></span> </h1>
+      </div>
+
+      <div class="stacks-content">
+        <h3>Techs :</h3>
+
+        <div class="stacks">
+          <ul>
+            <li>
+              <div data="html">
+                <img src="/svg/html.svg" alt="html-icon">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div data="css">
+                <img src="/svg/css.svg" alt="css-icon">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div data="js">
+                <img src="/svg/js.svg" alt="js-icon">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div data="react">
+                <img src="/svg/react.svg" alt="react-icon">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div data="node">
+                <img src="/svg/node.svg" alt="node-icon">
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="person-background">
+      <div class="wrapper-profile-photo">
+        <img class="profile-photo" src="/img/profile-photo.jpeg" alt="">
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/rodolfosouza88" target="_blank">
+          <img src="/svg/logo-github.svg" alt="">
+        </a>
+
+        <a href="https://www.instagram.com/rodolfovsouza/" target="_blank">
+          <img src="/svg/logo-insta.svg" alt="">
+        </a>
+
+        <a href="https://www.linkedin.com/in/rodolfosouza88/" target="_blank">
+          <img src="/svg/logo-linkedin.svg" alt="">
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+  <!--End Person-->
+
+  <!--About-->
+  <section id="about">
+    <div class="background-about">
+      <div class="img-wrapper">
+        <img src="/img/macbook.jpg" alt="nootebook">
+      </div>
+
+    </div>
+
+    <div class="box-about">
+      <div class="section-subtitle">
+        <h2>
+          <p>💻</p>
+          <p><span>Desenvolvedor</span>Full Stack</p>
+        </h2>
+      </div>
+
+      <h3>Sou um Desenvolvedor Front-end com experiências em
+        <p>HTML, CSS, JavaScript, React.Js e Node.Js</p>
+      </h3>
+
+      <h4>
+        Meu nome é Rodolfo Souza, sou estudante de Desenvolvimento Web,
+        formado em Analise e Desenvolvimento de Sistemas.
+        Atualmente estou aberto para oportunidades como Desenvolvedor de Software e Front-end.
+      </h4>
+
+      <h4>
+        Abaixo está o meu <p>currículo</p> para download
+      </h4>
+
+      <div class="button-cta">
+        <a href="/Public/Document/Currículo - Rodolfo Souza.pdf" download="CV-Rodolfo-Souza"
+          aria-label="Baixar curriculo Rodolfo Souza">
+          Currículo
+        </a>
+      </div>
+    </div>
+
+  </section>
+  <!--End about-->
+
+  <!--Pojects--->
+  <section id="projects">
+    <div class="projects-title">
+      <h2>PROJETOS 🧩</h2>
+    </div>
+
+    <div class="container-projects">
+      <div class="swiper mySwiper">
+        <!-- wrapper-projects -->
+
+        <div class="swiper-wrapper">
+
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/clima-musica.jpg" alt="img-conversor">
+              </a>
+            </div>
+            <span>App Clima & Música</span>
+
+            <p>Aplicativo de previsão do tempo e música por cidades.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/rodolfosouza88/Clima-musica-App" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://app-climaemusica.netlify.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/churrascometro.png" alt="img-conversor">
+              </a>
+            </div>
+            <span>Churrascômetro</span>
+
+            <p>Projeto que calcula qts de comida e bebida com base nas pessoas e duração do evento.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/rodolfosouza88/churrascometro" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://churrascometroproject.netlify.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="https://chaveiro-araujo-franca.netlify.app/" target="_blank">
+                <img src="./img/chaveiro-araujo.jpg" alt="img-conversor">
+              </a>
+            </div>
+            <span>Chaveiro Araújo</span>
+            <p>Página de comércio da loja de Chaveiro localizada em Franca-SP (Site ainda em construção)</p>
+            <div class="cta-project">
+              <a href="https://github.com/rodolfosouza88/chaveiro-araujo" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://chaveiro-araujo-franca.netlify.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/conversor.jpg" alt="img-conversor">
+              </a>
+            </div>
+            <span>Conversor de moedas</span>
+            <p>Esse projeto, simula um conversor de moedas</p>
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/Pokedex.jpg" alt="img-Pokedex">
+              </a>
+            </div>
+            <span>Pokedex</span>
+            <p>Projeto feito com HTML, CSS e JavaScript que simula uma Pokeagenda do anime Pokémon.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/rodolfosouza88/pokedex" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://pokedex-sepia-nu.vercel.app/" target="_blank">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/conversor.jpg" alt="img-conversor">
+              </a>
+            </div>
+            <span>Conversor de moedas</span>
+            <p>Esse projeto, simula um conversor de moedas</p>
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!--End Projects-->
+
+  <!--Contatos-->
+  <section id="contacts">
+    <div class="contact-icon-content">
+      <h2>Contato 📱</h2>
+    </div>
+
+    <div class="contact-icons-wrapper">
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <div class="contact-info">
+          <span>Localização</span>
+          <p>Franca, São Paulo, Brasil</p>
+        </div>
+      </div>
+
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-square-envelope"></i>
+        </div>
+        <div class="contact-info">
+          <span>E-mail</span>
+          <a href="mailto: rodolfovasconcellos88@gmail.com" target="_blank">
+            rodolfovasconcellos88@gmail.com
+          </a>
+        </div>
+      </div>
+
+
+      <div class="contact-icons-wrapper">
+        <div class="contact-icon-content">
+          <div class="contact-icon">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <div class="contact-info">
+            <span>Celular (WhatsApp)</span>
+            <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5516994346006" target="_blank">
+              <p> <strong>55 (16) 99434-6006</strong> <i class="fa-brands fa-whatsapp"></i> </p>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+  </section>
+  <!--Fim Contatos-->
+
+  <!--Footer-->
+  <section id="footer">
+    <div class="container-footer">
+      <h2>Feito por 🦾</h2>
+      <h3>Rodolfo Vasconcellos de Souza ©️ 2023</h3>
+    </div>
+  </section>
+  <!--End Footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
