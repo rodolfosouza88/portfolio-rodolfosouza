@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 * {
   margin: 0px;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #header {
@@ -34,8 +34,8 @@ body {
   padding: 15px 30px;
   position: fixed;
 
-  background: 'transparent';
-  transition: all .3s ease-out;
+  background: "transparent";
+  transition: all 0.3s ease-out;
 
   z-index: 2;
 }
@@ -48,11 +48,11 @@ body {
   color: var(--color-white);
 
   font-size: 2rem;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .header-title h1:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .navbar {
@@ -69,13 +69,13 @@ body {
 
 .navbar-links li {
   list-style: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-links li a {
   text-decoration: none;
   color: var(--color-white);
-  
+
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -93,7 +93,7 @@ body {
   .navbar-links {
     display: flex;
     flex-direction: column;
-    
+
     width: 50%;
     height: 100vh;
 
@@ -104,24 +104,24 @@ body {
     clip-path: circle(100px at 90% -20%);
 
     pointer-events: none;
-    transition: .6s ease-out;
+    transition: 0.6s ease-out;
   }
 
   .menu-hamburguer {
     display: block;
 
     padding: 0;
-    margin-bottom: .4rem;
+    margin-bottom: 0.4rem;
     border: none;
     border-top: 3px solid var(--color-white);
     background: transparent;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     z-index: 1;
   }
 
   .menu-hamburguer:hover {
-    opacity: .8;
+    opacity: 0.8;
     cursor: pointer;
   }
 
@@ -132,11 +132,10 @@ body {
     width: 25px;
     height: 3px;
 
-    margin-top: .6rem;
+    margin-top: 0.6rem;
 
     background: var(--color-white);
   }
-
 
   /* ATIVO */
 
@@ -150,27 +149,23 @@ body {
   }
 
   .navbar.active .menu-hamburguer::before {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: rotate(-45deg) translate(-2px, -1px);
   }
 
   .navbar.active .menu-hamburguer::after {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: rotate(45deg) translate(-7px, -5px);
   }
-
-
 }
-
 
 @media (min-width: 1840px) {
   .header-title h1 {
-    font-size: calc(1vw + .8rem);
+    font-size: calc(1vw + 0.8rem);
   }
 
   .navbar {
     max-width: 25vw;
-   
   }
 
   .navbar-links li {
@@ -178,17 +173,9 @@ body {
   }
 
   .navbar-links li a {
-    font-size: calc(1vw + .3rem);
+    font-size: calc(1vw + 0.3rem);
   }
 }
-
-
-
-
-
-
-
-
 
 #person {
   height: 100vh;
@@ -223,7 +210,7 @@ body {
   font-size: calc(2vw + 1.5rem);
   line-height: calc(3vw + 1.8rem);
 
-  animation: written_text .5s ease forwards;
+  animation: written_text 0.5s ease forwards;
 }
 
 .person-content div h1:nth-child(1) {
@@ -235,7 +222,7 @@ body {
 }
 
 .person-content div h1:nth-child(3) {
-  animation: written_text_name .5s ease forwards;
+  animation: written_text_name 0.5s ease forwards;
   animation-delay: 3s;
 }
 
@@ -249,11 +236,11 @@ body {
   background: var(--color-pink);
 
   animation: written_text_box 1s ease;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .person-content div h1:nth-child(1) span {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .person-content div h1:nth-child(2) span {
@@ -281,7 +268,7 @@ body {
 
 .stacks-content h3 {
   color: var(--color-white);
-  font-size: calc(.85vw + .5rem);
+  font-size: calc(0.85vw + 0.5rem);
 
   margin-left: 20px;
 }
@@ -305,12 +292,11 @@ body {
   list-style: none;
 }
 
-
 .stacks li img {
   width: calc(2.5vw + 0.5rem);
   height: auto;
 
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .stacks li div img:hover {
@@ -358,7 +344,6 @@ body {
   }
 }
 
-
 /* sm -> md */
 @media (min-width: 377px) and (max-width: 768px) {
   .person-name {
@@ -396,7 +381,6 @@ body {
   }
 }
 
-
 .person-background {
   height: 100vh;
   width: 50%;
@@ -424,34 +408,40 @@ body {
   height: 100%;
   width: 100%;
 
-  opacity: .7;
+  opacity: 0.7;
   z-index: -1;
 
-  background:
-    linear-gradient(90deg, transparent 30%, var(--color-black)),
+  background: linear-gradient(90deg, transparent 30%, var(--color-black)),
     linear-gradient(180deg, transparent 30%, var(--color-black)),
     linear-gradient(0deg, transparent 65%, var(--color-black));
 }
 
 .wrapper-profile-photo {
+  width: 190px; /* ou o tamanho que você preferir */
+  height: 210px; /* manter quadrado ou ajustar conforme design */
+  overflow: hidden;
+  border-radius: 50%; /* para deixar a foto redonda */
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid #ddd; /* opcional, para destacar */
+}
 
-  padding: calc(1vw + 0.2rem);
-  margin: 20px 15px;
-
-  border-radius: 50%;
-  background:
-    radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
-    radial-gradient(#000 68%, transparent 0),
-    linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+.wrapper-profile-photo img.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém o aspecto da imagem, cortando o excesso */
+  display: block;
 }
 
 .profile-photo {
-  max-width: 280px;
+  width: 180px;
+  max-width: 180px;
+  height: 180px;
   border-radius: 50%;
-  height: 380px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 .links a img {
@@ -459,8 +449,8 @@ body {
   height: calc(2vw + 0.8rem);
 
   margin: calc(0.8vw + 0.8rem);
-  filter: brightness(.8);
-  transition: all .3s ease;
+  filter: brightness(0.8);
+  transition: all 0.3s ease;
 }
 
 .links a img:hover {
@@ -474,7 +464,6 @@ body {
     height: 20px;
   }
 }
-
 
 @media (max-width: 1440px) and (orientation: landscape) {
   .profile-photo {
@@ -507,7 +496,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .img-wrapper {
@@ -526,11 +514,9 @@ body {
   height: 100%;
   width: 100%;
 
-  background:
-    linear-gradient(.25turn, transparent 30%, var(--color-black)),
-    linear-gradient(.5turn, transparent 30%, var(--color-black)),
+  background: linear-gradient(0.25turn, transparent 30%, var(--color-black)),
+    linear-gradient(0.5turn, transparent 30%, var(--color-black)),
     linear-gradient(1turn, transparent 65%, var(--color-black));
-
 }
 
 .img-wrapper img {
@@ -566,7 +552,7 @@ body {
 
 .box-about h3 {
   margin: 3rem;
-  font-size: calc(.8vw + .8rem);
+  font-size: calc(0.8vw + 0.8rem);
 }
 
 .box-about h3 p {
@@ -582,7 +568,7 @@ body {
 
 .box-about h4 {
   margin: 1rem 3rem;
-  font-size: calc(.8vw + .5rem);
+  font-size: calc(0.8vw + 0.5rem);
 }
 
 .box-about h4 p {
@@ -605,29 +591,28 @@ body {
   padding: calc(0.2vw + 0.8rem) calc(2vw + 0.8rem);
   margin-bottom: 3rem;
 
-  font-size: calc(.7vw + .55rem);
-  font-family: 'Poppins', sans-serif;
+  font-size: calc(0.7vw + 0.55rem);
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
   color: var(--color-black);
   background: var(--color-white);
   text-align: center;
   text-decoration: none;
-
 
   border-radius: 10px;
   cursor: pointer;
 }
 
 .button-cta a:hover {
-  transition: all .3s ease;
-  filter: brightness(.8);
+  transition: all 0.3s ease;
+  filter: brightness(0.8);
 }
 
 /* sm */
 @media (max-width: 375px) {
   .box-about {
-    padding: 1rem
+    padding: 1rem;
   }
 
   .section-subtitle p {
@@ -641,7 +626,6 @@ body {
   .box-about h4 {
     margin: 1rem;
   }
-
 }
 
 @media (min-width: 376px) and (max-width: 768px) {
@@ -679,7 +663,6 @@ body {
     margin: 1.5rem;
   }
 }
-
 
 /* Final da sobre */
 
@@ -757,7 +740,6 @@ body {
   border-radius: 20px;
 
   z-index: 1;
-
 }
 
 .card-project::after {
@@ -812,7 +794,7 @@ body {
 
   border: 2px solid var(--color-white);
 
-  transition: transform .3s ease-out;
+  transition: transform 0.3s ease-out;
   cursor: pointer;
 }
 
@@ -825,14 +807,14 @@ body {
   font-weight: bold;
   font-size: 1.7rem;
 
-  margin: .75rem auto .5rem auto;
+  margin: 0.75rem auto 0.5rem auto;
 }
 
 .card-project p {
   color: #3d3d4b;
   font-weight: bold;
   font-size: 1.1rem;
-  margin: 0rem .75rem;
+  margin: 0rem 0.75rem;
 }
 
 .cta-project {
@@ -855,11 +837,11 @@ body {
 
   text-decoration: none;
 
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .cta-project a:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 @media (max-width: 375px) {
@@ -900,12 +882,12 @@ body {
   }
 
   .card-project span {
-    font-size: calc(1vw + .25rem);
+    font-size: calc(1vw + 0.25rem);
     margin: 0.5vw auto 0.5vw;
   }
 
   .card-project p {
-    font-size: calc(.7vw + .2rem);
+    font-size: calc(0.7vw + 0.2rem);
   }
 
   .cta-project {
@@ -931,7 +913,7 @@ body {
 
   background: var(--color-black);
 
-  color: var(--color-white)
+  color: var(--color-white);
 }
 
 .contact-icon-content h2 {
@@ -984,22 +966,21 @@ body {
 }
 
 .contact-info p {
-  margin: .25rem 0rem;
+  margin: 0.25rem 0rem;
 }
 
 .contact-info a {
   display: block;
-  margin: .25rem 0rem;
+  margin: 0.25rem 0rem;
 
   text-decoration: none;
   color: var(--color-white);
 }
 
 .contact-info a:hover {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
   color: var(--color-blue);
 }
-
 
 @media (min-width: 1840px) {
   .contact-icon-content h2 {
@@ -1020,11 +1001,11 @@ body {
   }
 
   .contact-info p {
-    font-size: .7vw;
+    font-size: 0.7vw;
   }
 
   .contact-info a {
-    font-size: .7vw;
+    font-size: 0.7vw;
   }
 }
 
@@ -1051,20 +1032,17 @@ body {
   flex-direction: column;
 
   color: var(--color-white);
-
 }
 
 @media (min-width: 1840px) {
   .container-footer h2 {
-    font-size: calc(1vw + .2rem);
+    font-size: calc(1vw + 0.2rem);
   }
 
   .container-footer h3 {
-    font-size: .8vw;
+    font-size: 0.8vw;
   }
 }
-
-
 
 @keyframes written_text {
   100% {
